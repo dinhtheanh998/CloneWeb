@@ -1,0 +1,41 @@
+.top-slide {
+  // background-color: $primary-color;
+  height: 382px;
+  margin-top: 12px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* THIS creates the animation! */
+    transition: transform 1s;
+  }
+  .slider__btn {
+    background-color: rgba(204, 204, 204, 0.4);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%);
+    border: none;
+    position: absolute;
+    cursor: pointer;
+  }
+  .slider__btn--right {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  .slider__btn--left {
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,16 @@
+.btn-on-top {
+  background-color: #fff;
+  display: block;
+  position: fixed;
+  color: $green-dark;
+  bottom: 5%;
+  right: 15%;
+  font-size: 60px;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.d-none {
+  display: none;
+}
